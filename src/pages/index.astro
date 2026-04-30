@@ -44,20 +44,12 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Logo Carousel -->
+  <!-- Client Logo Carousel -->
   <section class="py-14 bg-white border-b border-slate-100 overflow-hidden">
-    <p class="text-center text-sm font-medium text-slate-400 uppercase tracking-widest mb-8">Powered by the modern data stack</p>
+    <p class="text-center text-sm font-medium text-slate-400 uppercase tracking-widest mb-8">Trusted by</p>
     <div class="relative">
-      <div class="flex gap-12 items-center animate-marquee whitespace-nowrap">
+      <div class="flex gap-16 items-center animate-marquee whitespace-nowrap">
         {[
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/670e244552c6f33e1896420b_dbt_logo_3.png', alt: 'dbt' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6491592b8a5331c19bced084_looker_studio_logo.png', alt: 'Looker Studio' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/648ae792cc9c908a8a4ec6ea_hevo_data_logo.png', alt: 'Hevo Data' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649158cffbff40d1e3efa330_snowflake_logo.png', alt: 'Snowflake' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649158b6fbb3a410da133cd9_bigquery_logo.png', alt: 'BigQuery' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649159b83a57a0d2ccd45e0a_powerbi_logo.png', alt: 'Power BI' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/648ae6d74aed70cbe422cc0e_cube_logo.png', alt: 'Cube' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/670e24a7b6a710a19f16b880_github_logo_2.png', alt: 'GitHub' },
           { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6242c6dc816b4f62d5c56f90_Delta-Safety-Training.png', alt: 'Delta Safety Training' },
           { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6242c6d49b1ad2fcefbd8d2d_logo-clubcollect%20(1).png', alt: 'Club Collect' },
           { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/648aec0b84ca07f77700a234_bootman_logo.png', alt: 'Bootman' },
@@ -65,14 +57,6 @@ import Layout from '../layouts/Layout.astro';
           { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/64e9b09b165f6871809ceb5e_Freeday-logo.png', alt: 'Freeday' },
           { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6565b75d51b60aef24395018_6523f4f555935343384992bb_logo-color-dark-sm.png', alt: 'C-Job' },
           /* duplicate set for seamless loop */
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/670e244552c6f33e1896420b_dbt_logo_3.png', alt: 'dbt' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6491592b8a5331c19bced084_looker_studio_logo.png', alt: 'Looker Studio' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/648ae792cc9c908a8a4ec6ea_hevo_data_logo.png', alt: 'Hevo Data' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649158cffbff40d1e3efa330_snowflake_logo.png', alt: 'Snowflake' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649158b6fbb3a410da133cd9_bigquery_logo.png', alt: 'BigQuery' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649159b83a57a0d2ccd45e0a_powerbi_logo.png', alt: 'Power BI' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/648ae6d74aed70cbe422cc0e_cube_logo.png', alt: 'Cube' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/670e24a7b6a710a19f16b880_github_logo_2.png', alt: 'GitHub' },
           { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6242c6dc816b4f62d5c56f90_Delta-Safety-Training.png', alt: 'Delta Safety Training' },
           { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6242c6d49b1ad2fcefbd8d2d_logo-clubcollect%20(1).png', alt: 'Club Collect' },
           { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/648aec0b84ca07f77700a234_bootman_logo.png', alt: 'Bootman' },
@@ -81,7 +65,7 @@ import Layout from '../layouts/Layout.astro';
           { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6565b75d51b60aef24395018_6523f4f555935343384992bb_logo-color-dark-sm.png', alt: 'C-Job' },
         ].map(logo => (
           <a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="inline-flex items-center shrink-0">
-            <img src={logo.src} alt={logo.alt} class="h-8 w-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+            <img src={logo.src} alt={logo.alt} class="h-10 w-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
           </a>
         ))}
       </div>
@@ -196,24 +180,26 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Tech Stack -->
-  <section id="stack" class="py-24 px-6 bg-white">
+  <section id="stack" class="py-24 px-6 bg-slate-50">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold text-slate-900 mb-4">Built on best-in-class tooling</h2>
         <p class="text-xl text-slate-500 max-w-2xl mx-auto">We work with the leading modern data stack tools, keeping clients fully sovereign over their own infrastructure.</p>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
         {[
-          { name: 'BigQuery', role: 'Data warehouse' },
-          { name: 'dbt', role: 'Transformation' },
-          { name: 'Cube', role: 'Semantic layer' },
-          { name: 'Looker Studio', role: 'Visualisation' },
-          { name: 'PowerBI', role: 'Visualisation' },
-          { name: 'GitHub', role: 'Version control' },
+          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649158b6fbb3a410da133cd9_bigquery_logo.png', alt: 'BigQuery', role: 'Data warehouse' },
+          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/670e244552c6f33e1896420b_dbt_logo_3.png', alt: 'dbt', role: 'Transformation' },
+          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/648ae6d74aed70cbe422cc0e_cube_logo.png', alt: 'Cube', role: 'Semantic layer' },
+          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/648ae792cc9c908a8a4ec6ea_hevo_data_logo.png', alt: 'Hevo Data', role: 'Data integration' },
+          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6491592b8a5331c19bced084_looker_studio_logo.png', alt: 'Looker Studio', role: 'Visualisation' },
+          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649159b83a57a0d2ccd45e0a_powerbi_logo.png', alt: 'Power BI', role: 'Visualisation' },
+          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649158cffbff40d1e3efa330_snowflake_logo.png', alt: 'Snowflake', role: 'Data warehouse' },
+          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/670e24a7b6a710a19f16b880_github_logo_2.png', alt: 'GitHub', role: 'Version control' },
         ].map(tool => (
-          <div class="flex flex-col gap-1 border border-slate-200 rounded-xl px-6 py-5">
-            <span class="font-semibold text-slate-900">{tool.name}</span>
-            <span class="text-sm text-slate-500">{tool.role}</span>
+          <div class="bg-white border border-slate-200 rounded-2xl px-6 py-6 flex flex-col items-center gap-4 text-center">
+            <img src={tool.src} alt={tool.alt} class="h-10 w-auto object-contain" />
+            <span class="text-xs font-medium text-slate-400 uppercase tracking-wider">{tool.role}</span>
           </div>
         ))}
       </div>
