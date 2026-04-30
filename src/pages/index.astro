@@ -212,7 +212,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <!-- Pipeline stages -->
-      <div class="flex flex-col md:flex-row items-stretch gap-0">
+      <div class="flex flex-col md:flex-row items-stretch gap-0 md:min-h-[220px]">
 
         {[
           {
@@ -251,8 +251,8 @@ import Layout from '../layouts/Layout.astro';
             ]
           },
         ].map((group, i) => (
-          <div class="flex md:flex-row items-center flex-1">
-            <div class={`flex-1 border ${group.color} rounded-2xl p-8 flex flex-col gap-6`}>
+          <div class="flex md:flex-row items-stretch flex-1">
+            <div class={`flex-1 h-full border ${group.color} rounded-2xl p-8 flex flex-col gap-6 justify-between`}>
               <span class={`text-xs font-bold uppercase tracking-widest ${group.labelColor}`}>{group.stage}</span>
               <div class="flex flex-row md:flex-col gap-4 items-center justify-center">
                 {group.tools.map(tool => (
@@ -276,7 +276,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="mt-3 border border-slate-200 bg-slate-100 rounded-2xl px-8 py-4 flex items-center justify-between gap-4">
         <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Version Control</span>
         <img src="https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/670e24a7b6a710a19f16b880_github_logo_2.png" alt="GitHub" class="h-6 w-auto object-contain opacity-40" />
-        <span class="text-xs text-slate-400 italic">Entire pipeline tracked through GitHub</span>
+        <span></span>
       </div>
 
       <p class="text-center text-sm text-slate-400 mt-6">All repositories are version-controlled and client-owned — no vendor lock-in, full sovereignty.</p>
