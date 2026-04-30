@@ -205,28 +205,74 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- Tech Stack -->
   <section id="stack" class="py-24 px-6 bg-slate-50">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold text-slate-900 mb-4">Built on best-in-class tooling</h2>
         <p class="text-xl text-slate-500 max-w-2xl mx-auto">We work with the leading modern data stack tools, keeping clients fully sovereign over their own infrastructure.</p>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <!-- Pipeline stages -->
+      <div class="flex flex-col md:flex-row items-stretch gap-0">
+
         {[
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649158b6fbb3a410da133cd9_bigquery_logo.png', alt: 'BigQuery', role: 'Data warehouse' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/670e244552c6f33e1896420b_dbt_logo_3.png', alt: 'dbt', role: 'Transformation' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/648ae6d74aed70cbe422cc0e_cube_logo.png', alt: 'Cube', role: 'Semantic layer' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/648ae792cc9c908a8a4ec6ea_hevo_data_logo.png', alt: 'Hevo Data', role: 'Data integration' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6491592b8a5331c19bced084_looker_studio_logo.png', alt: 'Looker Studio', role: 'Visualisation' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649159b83a57a0d2ccd45e0a_powerbi_logo.png', alt: 'Power BI', role: 'Visualisation' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649158cffbff40d1e3efa330_snowflake_logo.png', alt: 'Snowflake', role: 'Data warehouse' },
-          { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/670e24a7b6a710a19f16b880_github_logo_2.png', alt: 'GitHub', role: 'Version control' },
-        ].map(tool => (
-          <div class="bg-white border border-slate-200 rounded-2xl px-6 py-6 flex flex-col items-center gap-4 text-center">
-            <img src={tool.src} alt={tool.alt} class="h-10 w-auto object-contain" />
-            <span class="text-xs font-medium text-slate-400 uppercase tracking-wider">{tool.role}</span>
+          {
+            stage: 'Extraction',
+            color: 'bg-violet-50 border-violet-200',
+            labelColor: 'text-violet-600',
+            tools: [
+              { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/648ae792cc9c908a8a4ec6ea_hevo_data_logo.png', alt: 'Hevo Data' },
+              { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/670e24a7b6a710a19f16b880_github_logo_2.png', alt: 'GitHub' },
+            ]
+          },
+          {
+            stage: 'Warehouse',
+            color: 'bg-blue-50 border-blue-200',
+            labelColor: 'text-blue-600',
+            tools: [
+              { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649158b6fbb3a410da133cd9_bigquery_logo.png', alt: 'BigQuery' },
+              { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649158cffbff40d1e3efa330_snowflake_logo.png', alt: 'Snowflake' },
+            ]
+          },
+          {
+            stage: 'Transformation & Semantics',
+            color: 'bg-emerald-50 border-emerald-200',
+            labelColor: 'text-emerald-600',
+            tools: [
+              { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/670e244552c6f33e1896420b_dbt_logo_3.png', alt: 'dbt' },
+              { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/648ae6d74aed70cbe422cc0e_cube_logo.png', alt: 'Cube' },
+            ]
+          },
+          {
+            stage: 'Visualisation',
+            color: 'bg-orange-50 border-orange-200',
+            labelColor: 'text-orange-600',
+            tools: [
+              { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6491592b8a5331c19bced084_looker_studio_logo.png', alt: 'Looker Studio' },
+              { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/649159b83a57a0d2ccd45e0a_powerbi_logo.png', alt: 'Power BI' },
+            ]
+          },
+        ].map((group, i) => (
+          <div class="flex md:flex-row items-center flex-1">
+            <div class={`flex-1 border ${group.color} rounded-2xl p-6 flex flex-col gap-4`}>
+              <span class={`text-xs font-bold uppercase tracking-widest ${group.labelColor}`}>{group.stage}</span>
+              <div class="flex flex-row md:flex-col gap-4 items-center justify-center">
+                {group.tools.map(tool => (
+                  <img src={tool.src} alt={tool.alt} class="h-8 w-auto object-contain max-w-[100px]" />
+                ))}
+              </div>
+            </div>
+            {i < 3 && (
+              <div class="hidden md:flex items-center px-2 text-slate-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            )}
           </div>
         ))}
+
       </div>
+
       <p class="text-center text-sm text-slate-400 mt-8">All repositories are version-controlled and client-owned — no vendor lock-in, full sovereignty.</p>
     </div>
   </section>
