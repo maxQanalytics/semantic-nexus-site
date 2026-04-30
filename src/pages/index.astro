@@ -221,7 +221,6 @@ import Layout from '../layouts/Layout.astro';
             labelColor: 'text-violet-600',
             tools: [
               { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/648ae792cc9c908a8a4ec6ea_hevo_data_logo.png', alt: 'Hevo Data' },
-              { src: 'https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/670e24a7b6a710a19f16b880_github_logo_2.png', alt: 'GitHub' },
             ]
           },
           {
@@ -273,7 +272,14 @@ import Layout from '../layouts/Layout.astro';
 
       </div>
 
-      <p class="text-center text-sm text-slate-400 mt-8">All repositories are version-controlled and client-owned — no vendor lock-in, full sovereignty.</p>
+      <!-- GitHub version control bar -->
+      <div class="mt-3 border border-slate-200 bg-slate-100 rounded-2xl px-8 py-4 flex items-center justify-between gap-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Version Control</span>
+        <img src="https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/670e24a7b6a710a19f16b880_github_logo_2.png" alt="GitHub" class="h-6 w-auto object-contain opacity-40" />
+        <span class="text-xs text-slate-400 italic">Entire pipeline tracked through GitHub</span>
+      </div>
+
+      <p class="text-center text-sm text-slate-400 mt-6">All repositories are version-controlled and client-owned — no vendor lock-in, full sovereignty.</p>
     </div>
   </section>
 
