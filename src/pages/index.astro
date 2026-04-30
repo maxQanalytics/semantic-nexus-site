@@ -253,11 +253,11 @@ import Layout from '../layouts/Layout.astro';
           },
         ].map((group, i) => (
           <div class="flex md:flex-row items-center flex-1">
-            <div class={`flex-1 border ${group.color} rounded-2xl p-6 flex flex-col gap-4`}>
+            <div class={`flex-1 border ${group.color} rounded-2xl p-8 flex flex-col gap-6`}>
               <span class={`text-xs font-bold uppercase tracking-widest ${group.labelColor}`}>{group.stage}</span>
               <div class="flex flex-row md:flex-col gap-4 items-center justify-center">
                 {group.tools.map(tool => (
-                  <img src={tool.src} alt={tool.alt} class="h-8 w-auto object-contain max-w-[100px]" />
+                  <img src={tool.src} alt={tool.alt} class="h-12 w-auto object-contain max-w-[140px]" />
                 ))}
               </div>
             </div>
