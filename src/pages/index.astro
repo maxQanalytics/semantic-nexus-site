@@ -1,0 +1,193 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="https://www.maxqanalytics.io" class="flex items-center gap-2">
+        <span class="text-brand-700 font-bold text-lg tracking-tight">Max Q Analytics</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm text-slate-600 font-medium">
+        <a href="#product" class="hover:text-brand-600 transition-colors">Product</a>
+        <a href="#frameworks" class="hover:text-brand-600 transition-colors">Frameworks</a>
+        <a href="#stack" class="hover:text-brand-600 transition-colors">Tech Stack</a>
+        <a href="#pricing" class="hover:text-brand-600 transition-colors">Pricing</a>
+        <a href="https://www.maxqanalytics.io" class="bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700 transition-colors">
+          Contact us
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-24 px-6 bg-gradient-to-br from-brand-950 via-brand-900 to-brand-700 text-white">
+    <div class="max-w-5xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white/80 text-sm px-4 py-1.5 rounded-full mb-8">
+        Flagship framework by Max Q Analytics
+      </div>
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+        Semantic<br /><span class="text-brand-300">Nexus</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed">
+        A standardised data architecture that gives your entire organisation a single source of truth — from raw data to boardroom KPIs.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://www.maxqanalytics.io" class="bg-white text-brand-800 font-semibold px-8 py-4 rounded-xl hover:bg-brand-50 transition-colors text-lg">
+          Get in touch
+        </a>
+        <a href="https://lookerstudio.google.com/u/0/reporting/86bd9839-3788-4b62-a1d9-4ce312bbff3e/page/p_etg6w1911c" target="_blank" rel="noopener" class="border border-white/30 text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/10 transition-colors text-lg">
+          View live demo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What is Semantic Nexus -->
+  <section id="product" class="py-24 px-6 bg-slate-50">
+    <div class="max-w-5xl mx-auto">
+      <div class="max-w-3xl">
+        <h2 class="text-4xl font-bold text-slate-900 mb-6">One architecture. Full clarity.</h2>
+        <p class="text-xl text-slate-600 leading-relaxed mb-6">
+          The Semantic Nexus is our standard setup for clients — a data architecture grounded in years of client feedback and best practices. It connects your data sources into a single semantic layer that leadership, finance, and operations teams can all rely on.
+        </p>
+        <p class="text-xl text-slate-600 leading-relaxed">
+          Company leadership uses it for Internal Analytics. Finance and planning teams run ad-hoc calculations against it. After a successful deployment, monthly KPIs can be shared directly with shareholders through the metrics exchange.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Components -->
+  <section class="py-24 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-slate-900 mb-4">Product components</h2>
+        <p class="text-xl text-slate-500 max-w-2xl mx-auto">Everything you need to understand, monitor, and communicate your data architecture.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Data Model Explorer -->
+        <div class="bg-slate-50 rounded-2xl p-8">
+          <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6M9 8h6M9 16h4" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Data Model Explorer</h3>
+          <p class="text-slate-600 mb-4 leading-relaxed">A structured view of all your data — sources, metrics, data quality and pipeline health — in a single navigable interface.</p>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">—</span><span><strong>Sources</strong> — multi-source tables with aggregations and event distributions</span></li>
+            <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">—</span><span><strong>Metrics</strong> — dedicated pages per KPI with scorecards, numerator/denominator, and business context</span></li>
+            <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">—</span><span><strong>Data Entry Tests</strong> — client-specific automated tests with owners and deeplinks</span></li>
+            <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">—</span><span><strong>Data Freshness</strong> — pipeline flowchart from extraction through to consumption</span></li>
+          </ul>
+        </div>
+
+        <!-- Domain Reports -->
+        <div class="bg-slate-50 rounded-2xl p-8">
+          <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Domain Reports — Atlas</h3>
+          <p class="text-slate-600 mb-4 leading-relaxed">Three purpose-built report domains aligned to how your business is structured — each with periodic dashboards and trend analysis.</p>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">—</span><span><strong>Commerce Atlas</strong> — go-to-market performance, unit economics, and vertical breakdowns</span></li>
+            <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">—</span><span><strong>Finance Atlas</strong> — financial operations, margins, and periodic performance</span></li>
+            <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">—</span><span><strong>Operations Atlas</strong> — business operations metrics, utilisation, and capacity</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Frameworks -->
+  <section id="frameworks" class="py-24 px-6 bg-brand-950 text-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Three core frameworks</h2>
+        <p class="text-xl text-white/60 max-w-2xl mx-auto">The Semantic Nexus is underpinned by three frameworks that cover architecture, performance tracking, and security.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-8">
+          <div class="text-brand-300 text-sm font-semibold uppercase tracking-wider mb-3">SDA</div>
+          <h3 class="text-xl font-bold mb-3">Standardised Data Architecture</h3>
+          <p class="text-white/60 leading-relaxed text-sm">Best practices for building a data pipeline and data model that is robust, flexible, and low cost — refined over years of real client work.</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-8">
+          <div class="text-brand-300 text-sm font-semibold uppercase tracking-wider mb-3">IPF</div>
+          <h3 class="text-xl font-bold mb-3">Integrated Performance Framework</h3>
+          <p class="text-white/60 leading-relaxed text-sm">A systematised way of presenting the data model that strikes the right balance between simplicity and depth for all stakeholders.</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-8">
+          <div class="text-brand-300 text-sm font-semibold uppercase tracking-wider mb-3">MSP</div>
+          <h3 class="text-xl font-bold mb-3">Modular Security Protocol</h3>
+          <p class="text-white/60 leading-relaxed text-sm">A structured set of security checks designed for client-side and open-core architectures, where the security environment is inherently more complex.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="stack" class="py-24 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-slate-900 mb-4">Built on best-in-class tooling</h2>
+        <p class="text-xl text-slate-500 max-w-2xl mx-auto">We work with the leading modern data stack tools, keeping clients fully sovereign over their own infrastructure.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {[
+          { name: 'BigQuery', role: 'Data warehouse' },
+          { name: 'dbt', role: 'Transformation' },
+          { name: 'Cube', role: 'Semantic layer' },
+          { name: 'Looker Studio', role: 'Visualisation' },
+          { name: 'PowerBI', role: 'Visualisation' },
+          { name: 'GitHub', role: 'Version control' },
+        ].map(tool => (
+          <div class="flex flex-col gap-1 border border-slate-200 rounded-xl px-6 py-5">
+            <span class="font-semibold text-slate-900">{tool.name}</span>
+            <span class="text-sm text-slate-500">{tool.role}</span>
+          </div>
+        ))}
+      </div>
+      <p class="text-center text-sm text-slate-400 mt-8">All repositories are version-controlled and client-owned — no vendor lock-in, full sovereignty.</p>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-24 px-6 bg-slate-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-slate-900 mb-6">Pricing</h2>
+      <div class="bg-white border border-slate-200 rounded-2xl p-12 shadow-sm">
+        <div class="text-5xl font-extrabold text-brand-600 mb-2">Free</div>
+        <p class="text-slate-500 text-lg mb-8">The Semantic Nexus and all its components are included at no charge for all our clients.</p>
+        <p class="text-slate-700 text-base leading-relaxed max-w-xl mx-auto">
+          We only charge our standard hourly rate for implementation. No licensing fees, no hidden costs — just the time it takes to build it right.
+        </p>
+        <div class="mt-10">
+          <a href="https://www.maxqanalytics.io" class="bg-brand-600 text-white font-semibold px-10 py-4 rounded-xl hover:bg-brand-700 transition-colors text-lg inline-block">
+            Start a conversation
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-950 text-white/50 py-12 px-6">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+      <span class="text-white font-semibold">Max Q Analytics</span>
+      <span>&copy; {new Date().getFullYear()} Max Q Analytics. All rights reserved.</span>
+      <a href="https://www.maxqanalytics.io" class="hover:text-white transition-colors">maxqanalytics.io</a>
+    </div>
+  </footer>
+</Layout>
