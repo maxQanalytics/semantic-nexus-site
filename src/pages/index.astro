@@ -251,12 +251,86 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Footer -->
-  <footer class="bg-brand-950 text-white/50 py-12 px-6">
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-      <img src="/maxq-logo.png" alt="Maxq Analytics" class="h-10 w-10 rounded-md object-cover" />
-      <span class="text-white/30 italic">Fractional data engineering for dependable performance tracking.</span>
-      <span>&copy; {new Date().getFullYear()} Maxq Analytics. All rights reserved.</span>
-      <a href="https://www.maxqanalytics.io" class="hover:text-white transition-colors">maxqanalytics.io</a>
+  <footer class="bg-brand-950 text-white pt-16 pb-8 px-6">
+    <div class="max-w-6xl mx-auto">
+
+      <!-- Top: logo + tagline -->
+      <div class="flex flex-col md:flex-row justify-between items-start gap-8 pb-12 border-b border-white/10">
+        <div class="flex flex-col gap-3 max-w-xs">
+          <img src="/maxq-logo.png" alt="Maxq Analytics" class="h-12 w-12 rounded-md object-cover" />
+          <p class="text-white/40 text-sm italic leading-relaxed">Fractional data engineering for dependable performance tracking.</p>
+        </div>
+        <a href="https://calendly.com/philip-boontje" target="_blank" rel="noopener" class="bg-brand-600 text-white text-sm font-semibold px-6 py-3 rounded-lg hover:bg-brand-500 transition-colors shrink-0">
+          Book a call
+        </a>
+      </div>
+
+      <!-- Link grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-10 py-12 border-b border-white/10">
+
+        <!-- Company -->
+        <div>
+          <h4 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Company</h4>
+          <ul class="space-y-2.5 text-sm text-white/50">
+            <li><a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">About us</a></li>
+            <li><a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">Team</a></li>
+            <li><a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">Careers</a></li>
+            <li><a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">Press & News</a></li>
+            <li><a href="https://calendly.com/philip-boontje" target="_blank" rel="noopener" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Services</h4>
+          <ul class="space-y-2.5 text-sm text-white/50">
+            <li><a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">Data Engineering</a></li>
+            <li><a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">Semantic Modelling</a></li>
+            <li><a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">Analytics & Reporting</a></li>
+            <li><a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">Data Quality</a></li>
+            <li><a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">AI & Agents</a></li>
+          </ul>
+        </div>
+
+        <!-- Products & Resources -->
+        <div>
+          <h4 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Products</h4>
+          <ul class="space-y-2.5 text-sm text-white/50 mb-8">
+            <li><a href="/" class="hover:text-white transition-colors">Semantic Nexus</a></li>
+            <li><a href="https://docs.maxqanalytics.io/Demos/Semantics+API" target="_blank" rel="noopener" class="hover:text-white transition-colors">Semantics API</a></li>
+          </ul>
+          <h4 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Partners</h4>
+          <ul class="space-y-2.5 text-sm text-white/50">
+            <li><a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">Integrations</a></li>
+            <li><a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">Partner programme</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources, Support & Legal -->
+        <div>
+          <h4 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Resources</h4>
+          <ul class="space-y-2.5 text-sm text-white/50 mb-8">
+            <li><a href="https://docs.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">Documentation</a></li>
+            <li><a href="https://docs.maxqanalytics.io/Demos/Semantics+API" target="_blank" rel="noopener" class="hover:text-white transition-colors">Live demo</a></li>
+            <li><a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">Case studies</a></li>
+          </ul>
+          <h4 class="text-white text-xs font-semibold uppercase tracking-widest mb-4">Legal</h4>
+          <ul class="space-y-2.5 text-sm text-white/50">
+            <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Cookie Policy</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">GDPR / AVG</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/30">
+        <span>&copy; {new Date().getFullYear()} Maxq Analytics. All rights reserved.</span>
+        <a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">maxqanalytics.io</a>
+      </div>
+
     </div>
   </footer>
 </Layout>
