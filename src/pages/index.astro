@@ -90,6 +90,26 @@ import Layout from '../layouts/Layout.astro';
     }
   </style>
 
+  <!-- Stats -->
+  <section class="py-20 px-6 bg-brand-950 text-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-4 text-center">
+        {[
+          { value: '8', label: 'Active clients' },
+          { value: '€63M+', label: 'Combined annual revenue' },
+          { value: '460+', label: 'FTE across clients' },
+          { value: '25k+', label: 'Analytics API requests / day' },
+          { value: '3', label: 'Analytics agents operational' },
+        ].map(stat => (
+          <div class="flex flex-col gap-2">
+            <span class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">{stat.value}</span>
+            <span class="text-sm text-white/50 leading-snug">{stat.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <!-- What is Semantic Nexus -->
   <section id="product" class="py-24 px-6 bg-slate-50">
     <div class="max-w-5xl mx-auto">
