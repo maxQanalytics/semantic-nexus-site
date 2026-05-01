@@ -281,7 +281,7 @@ import Layout from '../layouts/Layout.astro';
               <span class={`text-xs font-bold uppercase tracking-widest ${group.labelColor}`}>{group.stage}</span>
               <div class="flex-1 flex flex-row md:flex-col gap-4 items-center justify-center mt-4">
                 {group.tools.map(tool => (
-                  <div class="bg-white/70 rounded-xl px-4 py-2.5 flex items-center justify-center shadow-sm">
+                  <div class="bg-white/70 rounded-xl px-4 h-14 flex items-center justify-center shadow-sm">
                     <img src={tool.src} alt={tool.alt} class={tool.cls ?? 'h-8 w-auto object-contain max-w-[120px]'} />
                   </div>
                 ))}
