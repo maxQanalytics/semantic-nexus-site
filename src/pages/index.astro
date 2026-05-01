@@ -344,8 +344,12 @@ import Layout from '../layouts/Layout.astro';
       <!-- GitHub version control bar -->
       <div class="mt-3 border border-slate-200 bg-slate-100 rounded-2xl px-8 py-4 flex items-center justify-between gap-4">
         <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Version Control</span>
-        <div class="bg-white/70 rounded-xl px-4 py-2.5 flex items-center justify-center shadow-sm">
+        <div class="relative group/tip bg-white/70 rounded-xl px-4 py-2.5 flex items-center justify-center shadow-sm cursor-default">
           <img src="/logos/github.png" alt="GitHub" class="h-8 w-auto object-contain" />
+          <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-52 bg-slate-900 text-white text-xs rounded-lg px-3 py-2 leading-relaxed opacity-0 group-hover/tip:opacity-100 transition-opacity duration-200 z-10 text-center shadow-lg">
+            Version control platform where all pipeline code, transformations, and semantic models are stored and tracked.
+            <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-900"></div>
+          </div>
         </div>
         <span></span>
       </div>
