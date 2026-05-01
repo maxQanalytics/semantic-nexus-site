@@ -248,9 +248,9 @@ import Layout from '../layouts/Layout.astro';
             color: 'bg-orange-50 border-orange-200',
             labelColor: 'text-orange-600',
             tools: [
-              { src: '/logos/looker-studio.png', alt: 'Looker Studio' },
-              { src: '/logos/powerbi.png', alt: 'Power BI' },
-              { src: '/logos/claude.png', alt: 'Claude' },
+              { src: '/logos/data-studio.png', alt: 'Data Studio', cls: 'max-w-[160px]' },
+              { src: '/logos/powerbi.png', alt: 'Power BI', cls: 'max-w-[120px]' },
+              { src: '/logos/claude.png', alt: 'Claude', cls: 'max-w-[140px]' },
             ]
           },
         ].map((group, i) => (
@@ -259,7 +259,7 @@ import Layout from '../layouts/Layout.astro';
               <span class={`text-xs font-bold uppercase tracking-widest ${group.labelColor}`}>{group.stage}</span>
               <div class="flex-1 flex flex-row md:flex-col gap-4 items-center justify-center">
                 {group.tools.map(tool => (
-                  <img src={tool.src} alt={tool.alt} class="h-8 w-auto object-contain max-w-[120px]" />
+                  <img src={tool.src} alt={tool.alt} class={`h-8 w-auto object-contain ${tool.cls ?? 'max-w-[120px]'}`} />
                 ))}
               </div>
             </div>
