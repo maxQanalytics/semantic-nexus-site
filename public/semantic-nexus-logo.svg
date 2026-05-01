@@ -1,0 +1,26 @@
+<svg width="400" height="70" viewBox="0 0 400 70" xmlns="http://www.w3.org/2000/svg">
+  <title>Semantic Nexus logo</title>
+
+  <!-- Icon -->
+  <polygon points="35,12 55,23 55,47 35,58 15,47 15,23" fill="#0EA5E9"/>
+  <polygon points="35,24 49,31 49,39 35,46 21,39 21,31" fill="white" opacity="0.35"/>
+
+  <line x1="35" y1="12" x2="35" y2="58" stroke="white" stroke-width="2" opacity="0.5"/>
+  <line x1="15" y1="23" x2="55" y2="47" stroke="white" stroke-width="2" opacity="0.5"/>
+  <line x1="55" y1="23" x2="15" y2="47" stroke="white" stroke-width="2" opacity="0.5"/>
+
+  <circle cx="35" cy="12" r="4" fill="white"/>
+  <circle cx="55" cy="23" r="4" fill="white"/>
+  <circle cx="55" cy="47" r="4" fill="white"/>
+  <circle cx="35" cy="58" r="4" fill="white"/>
+  <circle cx="15" cy="47" r="4" fill="white"/>
+  <circle cx="15" cy="23" r="4" fill="white"/>
+
+  <circle cx="35" cy="35" r="7" fill="#0EA5E9"/>
+  <circle cx="35" cy="35" r="4" fill="white"/>
+
+  <!-- Single text element, two tspans for weight difference -->
+  <text x="70" y="42" font-family="Arial, Helvetica, sans-serif" font-size="22">
+    <tspan font-weight="600" fill="#111827">Semantic </tspan><tspan font-weight="400" fill="#6B7280">Nexus</tspan>
+  </text>
+</svg>
