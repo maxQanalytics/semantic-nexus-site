@@ -125,47 +125,81 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Product Components -->
-  <section class="py-24 px-6 bg-white">
-    <div class="max-w-5xl mx-auto">
+  <!-- Product Items -->
+  <section id="product-items" class="py-24 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-slate-900 mb-4">Product components</h2>
-        <p class="text-xl text-slate-500 max-w-2xl mx-auto">Everything you need to understand, monitor, and communicate your data architecture.</p>
+        <h2 class="text-4xl font-bold text-slate-900 mb-4">Product items</h2>
+        <p class="text-xl text-slate-500 max-w-2xl mx-auto">Five components that together give your organisation complete visibility into its data — from raw sources to AI-powered querying.</p>
       </div>
-      <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Top row: 3 cards -->
+      <div class="grid md:grid-cols-3 gap-6 mb-6">
 
         <!-- Data Model Explorer -->
-        <div class="bg-slate-50 rounded-2xl p-8">
-          <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center mb-5">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <div class="bg-slate-50 rounded-2xl p-7 flex flex-col">
+          <div class="w-11 h-11 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center mb-5 shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7z" />
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6M9 8h6M9 16h4" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3">Data Model Explorer</h3>
-          <p class="text-slate-600 mb-4 leading-relaxed">A structured view of all your data — sources, metrics, data quality and pipeline health — in a single navigable interface.</p>
-          <ul class="space-y-2 text-sm text-slate-600">
-            <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">—</span><span><strong>Sources</strong> — multi-source tables with aggregations and event distributions</span></li>
-            <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">—</span><span><strong>Metrics</strong> — dedicated pages per KPI with scorecards, numerator/denominator, and business context</span></li>
-            <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">—</span><span><strong>Data Entry Tests</strong> — client-specific automated tests with owners and deeplinks</span></li>
-            <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">—</span><span><strong>Data Freshness</strong> — pipeline flowchart from extraction through to consumption</span></li>
-          </ul>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Data Model Explorer</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">A unified, navigable interface that maps your entire data architecture. Source tables are shown post-transformation with aggregations for fast analysis. Each critical metric gets its own dedicated page with a scorecard, numerator/denominator breakdown, and business context provided by the client.</p>
+          <a href="https://docs.maxqanalytics.io" target="_blank" rel="noopener" class="mt-auto text-xs font-semibold text-brand-600 hover:text-brand-800 transition-colors">View in docs →</a>
         </div>
 
+        <!-- Data Entry Tests -->
+        <div class="bg-slate-50 rounded-2xl p-7 flex flex-col">
+          <div class="w-11 h-11 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center mb-5 shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Data Entry Tests</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">Automated, client-specific tests that continuously validate data entries and business workflows. Each test is assigned an owner, a deeplink for direct resolution at the source, a context description, and a unique test ID — keeping data quality accountable and easy to communicate across teams.</p>
+          <a href="https://docs.maxqanalytics.io" target="_blank" rel="noopener" class="mt-auto text-xs font-semibold text-brand-600 hover:text-brand-800 transition-colors">View in docs →</a>
+        </div>
+
+        <!-- Pipeline Freshness -->
+        <div class="bg-slate-50 rounded-2xl p-7 flex flex-col">
+          <div class="w-11 h-11 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center mb-5 shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Pipeline Freshness</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">A live flowchart of your full data pipeline from extraction through transformation to consumption. Every stakeholder can see how data moves across your architecture — which systems are involved, what the current status is, and where bottlenecks occur. Invaluable when planning refactors or expansions.</p>
+          <a href="https://docs.maxqanalytics.io" target="_blank" rel="noopener" class="mt-auto text-xs font-semibold text-brand-600 hover:text-brand-800 transition-colors">View in docs →</a>
+        </div>
+
+      </div>
+
+      <!-- Bottom row: 2 cards centred -->
+      <div class="grid md:grid-cols-2 gap-6 md:max-w-3xl md:mx-auto">
+
         <!-- Domain Reports -->
-        <div class="bg-slate-50 rounded-2xl p-8">
-          <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center mb-5">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <div class="bg-slate-50 rounded-2xl p-7 flex flex-col">
+          <div class="w-11 h-11 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center mb-5 shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3">Domain Reports — Atlas</h3>
-          <p class="text-slate-600 mb-4 leading-relaxed">Three purpose-built report domains aligned to how your business is structured — each with periodic dashboards and trend analysis.</p>
-          <ul class="space-y-2 text-sm text-slate-600">
-            <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">—</span><span><strong>Commerce Atlas</strong> — go-to-market performance, unit economics, and vertical breakdowns</span></li>
-            <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">—</span><span><strong>Finance Atlas</strong> — financial operations, margins, and periodic performance</span></li>
-            <li class="flex gap-2"><span class="text-brand-500 font-bold mt-0.5">—</span><span><strong>Operations Atlas</strong> — business operations metrics, utilisation, and capacity</span></li>
-          </ul>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Domain Reports</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">Three purpose-built reporting domains aligned to how companies are structured: <strong>Commerce Atlas</strong> (go-to-market, unit economics), <strong>Finance Atlas</strong> (margins, financial operations), and <strong>Operations Atlas</strong> (utilisation, capacity). Each delivers periodic dashboards and trend analysis tailored to the domain's owners and targets.</p>
+          <a href="https://docs.maxqanalytics.io" target="_blank" rel="noopener" class="mt-auto text-xs font-semibold text-brand-600 hover:text-brand-800 transition-colors">View in docs →</a>
+        </div>
+
+        <!-- MCP Server -->
+        <div class="bg-slate-50 rounded-2xl p-7 flex flex-col">
+          <div class="w-11 h-11 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center mb-5 shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">MCP Server</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">A Model Context Protocol server that connects your semantic layer directly to AI agents and large language models. Query your live data model in natural language through Claude and other AI systems — bridging structured analytics with conversational intelligence without leaving your existing data infrastructure.</p>
+          <a href="https://docs.maxqanalytics.io" target="_blank" rel="noopener" class="mt-auto text-xs font-semibold text-brand-600 hover:text-brand-800 transition-colors">View in docs →</a>
         </div>
 
       </div>
