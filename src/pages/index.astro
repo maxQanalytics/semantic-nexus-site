@@ -11,10 +11,10 @@ import Layout from '../layouts/Layout.astro';
       </a>
       <div class="hidden md:flex items-center gap-8 text-sm text-slate-600 font-medium">
         <a href="#impact" class="hover:text-brand-600 transition-colors">Impact</a>
-        <a href="#case-studies" class="hover:text-brand-600 transition-colors">Case Studies</a>
         <a href="#product-items" class="hover:text-brand-600 transition-colors">Product</a>
         <a href="#frameworks" class="hover:text-brand-600 transition-colors">Frameworks</a>
         <a href="#stack" class="hover:text-brand-600 transition-colors">Tech Stack</a>
+        <a href="#case-studies" class="hover:text-brand-600 transition-colors">Case Studies</a>
         <a href="#pricing" class="hover:text-brand-600 transition-colors">Pricing</a>
         <a href="https://calendly.com/philip-boontje" target="_blank" rel="noopener" class="bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700 transition-colors">
           Contact us
@@ -144,83 +144,6 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="text-lg font-bold text-slate-900 mb-2">Natural language on your data</h3>
           <p class="text-slate-600 text-sm leading-relaxed">With the MCP Server, your semantic layer becomes accessible to AI agents. Leverage your single source of truth for agentic workflows and performance reviews.</p>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Case Studies -->
-  <section id="case-studies" class="py-24 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-slate-900 mb-4">Case studies</h2>
-        <p class="text-xl text-slate-500 max-w-2xl mx-auto">How the Semantic Nexus has been deployed across different industries and business models.</p>
-      </div>
-      <div class="grid md:grid-cols-2 gap-6">
-
-        <!-- ClubCollect -->
-        <a href="https://docs.maxqanalytics.io/Case+Studies/ClubCollect" target="_blank" rel="noopener" class="group bg-slate-50 rounded-2xl p-8 flex flex-col hover:shadow-md transition-shadow">
-          <div class="flex items-center justify-between mb-6">
-            <img src="https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6242c6d49b1ad2fcefbd8d2d_logo-clubcollect%20(1).png" alt="ClubCollect" class="h-7 w-auto object-contain" />
-            <span class="text-xs font-medium text-slate-400 bg-slate-200 px-3 py-1 rounded-full">Financial services</span>
-          </div>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">From rigid SiSense to a flexible modern data stack</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">ClubCollect replaced a costly, inflexible reporting setup with a Hevo → BigQuery → dbt → Looker Studio pipeline — unlocking cohort analysis, CAC/ARR tracking, and shareholder reporting.</p>
-          <ul class="space-y-1.5 text-sm text-slate-600 mb-6">
-            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Deeper visibility into customer behaviour and financial health</li>
-            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Significantly lower reporting overhead and costs</li>
-            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Real-time analytics enabling faster, data-driven decisions</li>
-          </ul>
-          <span class="mt-auto text-xs font-semibold text-brand-600 group-hover:text-brand-800 transition-colors">Read case study →</span>
-        </a>
-
-        <!-- C-Job -->
-        <a href="https://docs.maxqanalytics.io/Case+Studies/C-Job+Naval+Architects" target="_blank" rel="noopener" class="group bg-slate-50 rounded-2xl p-8 flex flex-col hover:shadow-md transition-shadow">
-          <div class="flex items-center justify-between mb-6">
-            <img src="/cjob-logo.jpeg" alt="C-Job Naval Architects" class="h-7 w-auto object-contain" />
-            <span class="text-xs font-medium text-slate-400 bg-slate-200 px-3 py-1 rounded-full">Maritime engineering</span>
-          </div>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">Replacing four siloed Power BI sources with one unified model</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">C-Job consolidated hour-tracking, planning, bookkeeping, and sales data into a single BigQuery dimensional star schema — removing complex Power BI transformations and delivering consistent cross-departmental reporting.</p>
-          <ul class="space-y-1.5 text-sm text-slate-600 mb-6">
-            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Single source of truth across all four data domains</li>
-            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Faster query performance with a dimensional star schema</li>
-            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Clearer dashboards driving adoption across finance and project teams</li>
-          </ul>
-          <span class="mt-auto text-xs font-semibold text-brand-600 group-hover:text-brand-800 transition-colors">Read case study →</span>
-        </a>
-
-        <!-- DELTA Safety Training -->
-        <a href="https://docs.maxqanalytics.io/Case+Studies/DELTA+Safety+Training" target="_blank" rel="noopener" class="group bg-slate-50 rounded-2xl p-8 flex flex-col hover:shadow-md transition-shadow">
-          <div class="flex items-center justify-between mb-6">
-            <img src="https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6242c6dc816b4f62d5c56f90_Delta-Safety-Training.png" alt="DELTA Safety Training" class="h-7 w-auto object-contain" />
-            <span class="text-xs font-medium text-slate-400 bg-slate-200 px-3 py-1 rounded-full">Safety certification</span>
-          </div>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">Building a full analytics ecosystem from the ground up</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">DELTA went from fragmented ERP, CRM and bookkeeping data to a fully integrated stack — including 30+ custom HR reports for clients, a REST API for marketplace sync, and embedded analytics via Cube.</p>
-          <ul class="space-y-1.5 text-sm text-slate-600 mb-6">
-            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Real-time certification and training data for clients and HR teams</li>
-            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Automated marketplace updates via REST API</li>
-            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Proactive CRM outreach for overdue certifications</li>
-          </ul>
-          <span class="mt-auto text-xs font-semibold text-brand-600 group-hover:text-brand-800 transition-colors">Read case study →</span>
-        </a>
-
-        <!-- Freeday -->
-        <a href="https://docs.maxqanalytics.io/Case+Studies/Freeday" target="_blank" rel="noopener" class="group bg-slate-50 rounded-2xl p-8 flex flex-col hover:shadow-md transition-shadow">
-          <div class="flex items-center justify-between mb-6">
-            <img src="https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/64e9b09b165f6871809ceb5e_Freeday-logo.png" alt="Freeday" class="h-7 w-auto object-contain" />
-            <span class="text-xs font-medium text-slate-400 bg-slate-200 px-3 py-1 rounded-full">AI workforce</span>
-          </div>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">Standardising SaaS metrics for investor readiness</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">Freeday needed consistent SaaS metrics — NRR, CAC payback, ARR growth — ahead of an investment round. We built a unified Airbyte → Snowflake → dbt → Cube stack with embedded analytics for their client portal.</p>
-          <ul class="space-y-1.5 text-sm text-slate-600 mb-6">
-            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Investor-ready reporting with structured, data-backed insights</li>
-            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Consistent SaaS metric definitions across all teams</li>
-            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Embedded client portal analytics via the Semantics API</li>
-          </ul>
-          <span class="mt-auto text-xs font-semibold text-brand-600 group-hover:text-brand-800 transition-colors">Read case study →</span>
-        </a>
 
       </div>
     </div>
@@ -433,6 +356,83 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <p class="text-center text-sm text-slate-400 mt-6">All repositories are version-controlled and client-owned — no vendor lock-in, full portability.</p>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section id="case-studies" class="py-24 px-6 bg-slate-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-slate-900 mb-4">Case studies</h2>
+        <p class="text-xl text-slate-500 max-w-2xl mx-auto">How the Semantic Nexus has been deployed across different industries and business models.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- ClubCollect -->
+        <a href="https://docs.maxqanalytics.io/Case+Studies/ClubCollect" target="_blank" rel="noopener" class="group bg-white rounded-2xl p-8 flex flex-col hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-6">
+            <img src="https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6242c6d49b1ad2fcefbd8d2d_logo-clubcollect%20(1).png" alt="ClubCollect" class="h-7 w-auto object-contain" />
+            <span class="text-xs font-medium text-slate-400 bg-slate-100 px-3 py-1 rounded-full">Financial services</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">From rigid SiSense to a flexible modern data stack</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">ClubCollect replaced a costly, inflexible reporting setup with a Hevo → BigQuery → dbt → Looker Studio pipeline — unlocking cohort analysis, CAC/ARR tracking, and shareholder reporting.</p>
+          <ul class="space-y-1.5 text-sm text-slate-600 mb-6">
+            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Deeper visibility into customer behaviour and financial health</li>
+            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Significantly lower reporting overhead and costs</li>
+            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Real-time analytics enabling faster, data-driven decisions</li>
+          </ul>
+          <span class="mt-auto text-xs font-semibold text-brand-600 group-hover:text-brand-800 transition-colors">Read case study →</span>
+        </a>
+
+        <!-- C-Job -->
+        <a href="https://docs.maxqanalytics.io/Case+Studies/C-Job+Naval+Architects" target="_blank" rel="noopener" class="group bg-white rounded-2xl p-8 flex flex-col hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-6">
+            <img src="/cjob-logo.jpeg" alt="C-Job Naval Architects" class="h-7 w-auto object-contain" />
+            <span class="text-xs font-medium text-slate-400 bg-slate-100 px-3 py-1 rounded-full">Maritime engineering</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Replacing four siloed Power BI sources with one unified model</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">C-Job consolidated hour-tracking, planning, bookkeeping, and sales data into a single BigQuery dimensional star schema — removing complex Power BI transformations and delivering consistent cross-departmental reporting.</p>
+          <ul class="space-y-1.5 text-sm text-slate-600 mb-6">
+            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Single source of truth across all four data domains</li>
+            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Faster query performance with a dimensional star schema</li>
+            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Clearer dashboards driving adoption across finance and project teams</li>
+          </ul>
+          <span class="mt-auto text-xs font-semibold text-brand-600 group-hover:text-brand-800 transition-colors">Read case study →</span>
+        </a>
+
+        <!-- DELTA Safety Training -->
+        <a href="https://docs.maxqanalytics.io/Case+Studies/DELTA+Safety+Training" target="_blank" rel="noopener" class="group bg-white rounded-2xl p-8 flex flex-col hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-6">
+            <img src="https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/6242c6dc816b4f62d5c56f90_Delta-Safety-Training.png" alt="DELTA Safety Training" class="h-7 w-auto object-contain" />
+            <span class="text-xs font-medium text-slate-400 bg-slate-100 px-3 py-1 rounded-full">Safety certification</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Building a full analytics ecosystem from the ground up</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">DELTA went from fragmented ERP, CRM and bookkeeping data to a fully integrated stack — including 30+ custom HR reports for clients, a REST API for marketplace sync, and embedded analytics via Cube.</p>
+          <ul class="space-y-1.5 text-sm text-slate-600 mb-6">
+            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Real-time certification and training data for clients and HR teams</li>
+            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Automated marketplace updates via REST API</li>
+            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Proactive CRM outreach for overdue certifications</li>
+          </ul>
+          <span class="mt-auto text-xs font-semibold text-brand-600 group-hover:text-brand-800 transition-colors">Read case study →</span>
+        </a>
+
+        <!-- Freeday -->
+        <a href="https://docs.maxqanalytics.io/Case+Studies/Freeday" target="_blank" rel="noopener" class="group bg-white rounded-2xl p-8 flex flex-col hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-6">
+            <img src="https://cdn.prod.website-files.com/5fe86bb8d7bed24c79daf68d/64e9b09b165f6871809ceb5e_Freeday-logo.png" alt="Freeday" class="h-7 w-auto object-contain" />
+            <span class="text-xs font-medium text-slate-400 bg-slate-100 px-3 py-1 rounded-full">AI workforce</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Standardising SaaS metrics for investor readiness</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">Freeday needed consistent SaaS metrics — NRR, CAC payback, ARR growth — ahead of an investment round. We built a unified Airbyte → Snowflake → dbt → Cube stack with embedded analytics for their client portal.</p>
+          <ul class="space-y-1.5 text-sm text-slate-600 mb-6">
+            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Investor-ready reporting with structured, data-backed insights</li>
+            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Consistent SaaS metric definitions across all teams</li>
+            <li class="flex gap-2"><span class="text-brand-500 font-bold shrink-0">—</span>Embedded client portal analytics via the Semantics API</li>
+          </ul>
+          <span class="mt-auto text-xs font-semibold text-brand-600 group-hover:text-brand-800 transition-colors">Read case study →</span>
+        </a>
+
+      </div>
     </div>
   </section>
 
