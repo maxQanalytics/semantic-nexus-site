@@ -458,16 +458,8 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Footer -->
-  <footer class="bg-brand-950 text-white pt-10 pb-6 px-6">
+  <footer class="bg-brand-950 text-white pt-8 pb-6 px-6">
     <div class="max-w-6xl mx-auto">
-
-      <!-- Top: logo + tagline -->
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4 pb-6 border-b border-white/10">
-        <div class="flex items-center gap-3">
-          <img src="/maxq-logo.png" alt="Maxq Analytics" class="h-8 w-8 rounded-md object-cover" />
-          <p class="text-white/40 text-xs italic">Fractional data engineering for dependable performance tracking.</p>
-        </div>
-      </div>
 
       <!-- Link grid -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 py-8 border-b border-white/10">
@@ -518,9 +510,12 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <!-- Bottom bar -->
-      <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/30">
+      <div class="pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/30">
         <span>&copy; {new Date().getFullYear()} Maxq Analytics. All rights reserved.</span>
-        <a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="hover:text-white transition-colors">maxqanalytics.io</a>
+        <a href="https://www.maxqanalytics.io" target="_blank" rel="noopener" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity">
+          <img src="/maxq-logo.png" alt="Maxq Analytics" class="h-6 w-6 rounded-md object-cover" />
+          <span class="italic text-white/40">Fractional data engineering for dependable performance tracking.</span>
+        </a>
       </div>
 
     </div>
