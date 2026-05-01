@@ -242,8 +242,8 @@ import Layout from '../layouts/Layout.astro';
             color: 'bg-violet-50 border-violet-200',
             labelColor: 'text-violet-600',
             tools: [
-              { src: '/logos/hevo.png', alt: 'Hevo Data' },
-              { src: '/logos/airbyte.svg', alt: 'Airbyte' },
+              { src: '/logos/hevo.png', alt: 'Hevo Data', tip: 'No-code pipeline platform for extracting and syncing data from 150+ sources into your warehouse.' },
+              { src: '/logos/airbyte.svg', alt: 'Airbyte', tip: 'Open-source data integration platform for syncing data from APIs, databases and files.' },
             ]
           },
           {
@@ -251,9 +251,9 @@ import Layout from '../layouts/Layout.astro';
             color: 'bg-blue-50 border-blue-200',
             labelColor: 'text-blue-600',
             tools: [
-              { src: '/logos/bigquery.png', alt: 'BigQuery' },
-              { src: '/logos/snowflake.png', alt: 'Snowflake' },
-              { src: '/logos/clickhouse.png', alt: 'ClickHouse' },
+              { src: '/logos/bigquery.png', alt: 'BigQuery', tip: "Google's serverless, scalable cloud data warehouse built for fast SQL analytics at any scale." },
+              { src: '/logos/snowflake.png', alt: 'Snowflake', tip: 'Cloud data platform with separated storage and compute, enabling flexible and cost-efficient scaling.' },
+              { src: '/logos/clickhouse.png', alt: 'ClickHouse', tip: 'High-performance columnar database optimised for real-time analytics on very large datasets.' },
             ]
           },
           {
@@ -261,8 +261,8 @@ import Layout from '../layouts/Layout.astro';
             color: 'bg-emerald-50 border-emerald-200',
             labelColor: 'text-emerald-600',
             tools: [
-              { src: '/logos/dbt.png', alt: 'dbt' },
-              { src: '/logos/cube.png', alt: 'Cube' },
+              { src: '/logos/dbt.png', alt: 'dbt', tip: 'SQL-based transformation tool that lets analytics engineers build, test and document data models in version control.' },
+              { src: '/logos/cube.png', alt: 'Cube', tip: 'Semantic layer that defines business metrics centrally and exposes them consistently via API to any downstream tool.' },
             ]
           },
           {
@@ -270,9 +270,9 @@ import Layout from '../layouts/Layout.astro';
             color: 'bg-orange-50 border-orange-200',
             labelColor: 'text-orange-600',
             tools: [
-              { src: '/logos/data-studio.png', alt: 'Data Studio', cls: 'h-6 w-auto object-contain max-w-[140px]' },
-              { src: '/logos/powerbi.png', alt: 'Power BI', cls: 'h-8 w-auto object-contain max-w-[120px]' },
-              { src: '/logos/claude.png', alt: 'Claude', cls: 'h-12 w-auto object-contain max-w-[160px]' },
+              { src: '/logos/data-studio.png', alt: 'Data Studio', cls: 'h-6 w-auto object-contain max-w-[140px]', tip: "Google's free BI tool for building interactive, shareable dashboards connected directly to your data sources." },
+              { src: '/logos/powerbi.png', alt: 'Power BI', cls: 'h-8 w-auto object-contain max-w-[120px]', tip: "Microsoft's business intelligence platform for creating rich reports and dashboards across your organisation." },
+              { src: '/logos/claude.png', alt: 'Claude', cls: 'h-12 w-auto object-contain max-w-[160px]', tip: "Anthropic's AI assistant — connected to your semantic layer via MCP Server for natural language data querying." },
             ]
           },
         ].map((group, i) => (
@@ -281,8 +281,12 @@ import Layout from '../layouts/Layout.astro';
               <span class={`text-xs font-bold uppercase tracking-widest ${group.labelColor}`}>{group.stage}</span>
               <div class="flex-1 flex flex-row md:flex-col gap-4 items-center justify-center mt-4">
                 {group.tools.map(tool => (
-                  <div class="bg-white/70 rounded-xl px-4 h-14 flex items-center justify-center shadow-sm">
+                  <div class="relative group/tip bg-white/70 rounded-xl px-4 h-14 flex items-center justify-center shadow-sm cursor-default">
                     <img src={tool.src} alt={tool.alt} class={tool.cls ?? 'h-8 w-auto object-contain max-w-[120px]'} />
+                    <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-52 bg-slate-900 text-white text-xs rounded-lg px-3 py-2 leading-relaxed opacity-0 group-hover/tip:opacity-100 transition-opacity duration-200 z-10 text-center shadow-lg">
+                      {tool.tip}
+                      <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-900"></div>
+                    </div>
                   </div>
                 ))}
               </div>
