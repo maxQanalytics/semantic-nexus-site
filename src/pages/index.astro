@@ -257,7 +257,7 @@ import Layout from '../layouts/Layout.astro';
           <div class="flex md:flex-row items-stretch flex-1">
             <div class={`flex-1 h-full border ${group.color} rounded-2xl p-8 flex flex-col`}>
               <span class={`text-xs font-bold uppercase tracking-widest ${group.labelColor}`}>{group.stage}</span>
-              <div class="flex-1 flex flex-row md:flex-col gap-4 items-center justify-center">
+              <div class="flex-1 flex flex-row md:flex-col gap-4 items-center justify-center mt-4">
                 {group.tools.map(tool => (
                   <img src={tool.src} alt={tool.alt} class={`h-8 w-auto object-contain ${tool.cls ?? 'max-w-[120px]'}`} />
                 ))}
